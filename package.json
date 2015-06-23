@@ -1,39 +1,45 @@
 {
-    "name"        : "dkvdb",
-    "description" : "Distributed Key Value Database",
-    "homepage"    : "https://github.com/daxxog/dkvdb",
-    "main"        : "dkvdb.min.js",
-    "version"     : "0.0.1",
-    "engines": {
-        "node" : ">=0.10.33"
-    },
-    "maintainers": [{
-        "name"  : "David Volm",
-        "email" : "david@volminator.com",
-        "web"   : "http://daxxog.com/"
-    }],
-    "repository": {
-        "type" : "git",
-        "url"  : "https://github.com/daxxog/dkvdb.git"
-    },
-    "devDependencies": {
-        "bitfactory": "*",
-        "stoptime": "*",
-        "uglify-js": "*",
-        "vows": "*"
-    },
-    "scripts": {
-        "build": "node make.js",
-        "test": "vows test/*",
-        "start": "node cli.js",
-        "prepublish": "npm run build"
-    },
-    "files": [
-        "cli.min.js",
-        "dkvdb.min.js",
-        "bin/dkvdb"
-    ],
-    "bin": {
-        "dkvdb" : "bin/dkvdb"
+  "name": "dkvdb",
+  "description": "Distributed Key Value Database",
+  "license"     : "Apache-2.0",
+  "homepage": "https://github.com/daxxog/dkvdb",
+  "main": "dkvdb.min.js",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=0.10.33"
+  },
+  "maintainers": [
+    {
+      "name": "David Volm",
+      "email": "david@volminator.com",
+      "web": "http://daxxog.com/"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daxxog/dkvdb.git"
+  },
+  "devDependencies": {
+    "bitfactory": "*",
+    "stoptime": "*",
+    "uglify-js": "*",
+    "vows": "*"
+  },
+  "scripts": {
+    "build": "node make.js",
+    "test": "vows test/*",
+    "start": "node cli.js",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "cli.min.js",
+    "dkvdb.min.js",
+    "bin/dkvdb"
+  ],
+  "bin": {
+    "dkvdb": "bin/dkvdb"
+  },
+  "dependencies": {
+    "express": "^4.13.0"
+  }
 }
