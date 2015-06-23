@@ -5,6 +5,8 @@
  * http://www.apache.org/licenses/LICENSE-2.0.html  
  */
 
-var Dkvdb = require('./dkvdb.min.js');
+var Dkvdb = require('./dkvdb.min.js'),
+	express = require('express'),
+	app = express();
 
-new Dkvdb();
+app.use

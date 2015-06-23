@@ -20,7 +20,12 @@
         root.Dkvdb = factory();
   }
 }(this, function() {
-    var Dkvdb;
-    
-    return Dkvdb;
+    var redis = require('redis'),
+        express = require('express'),
+        client = redis.createClient(),
+        app = express.Router();
+
+    app.get('/')
+
+    return app;
 }));
